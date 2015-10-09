@@ -20,6 +20,9 @@
 #define DXGI_STATUS_MODE_CHANGED                MAKE_DXGI_STATUS(7)
 #define DXGI_STATUS_MODE_CHANGE_IN_PROGRESS     MAKE_DXGI_STATUS(8)
 
+#endif /*DXGI_STATUS_OCCLUDED*/
+
+#ifndef DXGI_ERROR_INVALID_CALL
 
 #define DXGI_ERROR_INVALID_CALL                 MAKE_DXGI_HRESULT(1)
 #define DXGI_ERROR_NOT_FOUND                    MAKE_DXGI_HRESULT(2)
@@ -37,9 +40,9 @@
 #define DXGI_ERROR_REMOTE_CLIENT_DISCONNECTED   MAKE_DXGI_HRESULT(35)
 #define DXGI_ERROR_REMOTE_OUTOFMEMORY           MAKE_DXGI_HRESULT(36)
 
-#else /*DXGI_STATUS_OCCLUDED*/
+#endif /*DXGI_ERROR_INVALID_CALL*/
+
 // DXGI error messages have moved to winerror.h
-#endif
 
 #define DXGI_CPU_ACCESS_NONE                    ( 0 )
 #define DXGI_CPU_ACCESS_DYNAMIC                 ( 1 )
